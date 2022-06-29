@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Desafio técnico para Bitsion" />
     <meta name="author" content="Godoy Matias" />
-    <link href="https://www.bitsion.com/bitsion/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="../img/logoipsum-logo-50.svg" rel="icon" type="image/x-icon"/>
     <title>Ficticia - Login</title>
     <%-- cdn de bootstrap 5--%>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
@@ -53,7 +53,7 @@
             overflow-y: hidden;
         }
 
-            .nav-scroller .nav {
+        .nav-scroller .nav {
                 display: flex;
                 flex-wrap: nowrap;
                 padding-bottom: 1rem;
@@ -69,26 +69,27 @@
 <body class="text-center">
     <main class="form-signin w-100 m-auto">
         <form id="frmLogin" runat="server">
-            <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" />
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <img class="mb-4" src="../img/logoipsum-logo-50.svg" alt="" width="150" height="50" />
+            <h1 class="h3 mb-3 fw-normal">Ingresá a tu cuenta</h1>
 
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                <label for="floatingInput">Email address</label>
+                <asp:TextBox ID="txtUsername" runat="server" TextMode="Password" CssClass="form-control" placeholder="nombre@ejemplo.com"></asp:TextBox>
+                <label for="<%= txtUsername.ClientID %>">Usuario</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-                <label for="floatingPassword">Password</label>
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Password"></asp:TextBox>
+                <label for="<%= txtPassword.ClientID %>">Contraseña</label>
             </div>
 
             <div class="checkbox mb-3">
                 <label>
                     <input type="checkbox" value="remember-me" />
-                    Remember me
+                    Recordarme
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="w-100 btn btn-lg btn-primary" />
+            <%--<button class="" type="submit"></button>--%>
+            <p class="mt-5 mb-3 text-muted">&copy; Godoy Matias 2022</p>
         </form>
     </main>
 </body>
