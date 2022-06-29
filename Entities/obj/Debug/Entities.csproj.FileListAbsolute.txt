@@ -1,0 +1,6 @@
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\Entities\bin\Debug\Entities.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\Entities\bin\Debug\Entities.pdb
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\Entities\obj\Debug\Entities.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\Entities\obj\Debug\Entities.pdb

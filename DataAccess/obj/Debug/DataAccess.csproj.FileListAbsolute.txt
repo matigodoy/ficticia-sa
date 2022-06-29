@@ -1,0 +1,9 @@
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\bin\Debug\Entities.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\bin\Debug\Entities.pdb
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\DataAccess\obj\Debug\DataAccess.pdb

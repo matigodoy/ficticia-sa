@@ -74,3 +74,9 @@ C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\bin\es\Mic
 C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\obj\Debug\ABMC.csproj.CopyComplete
 C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\obj\Debug\ABMC.dll
 C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\obj\Debug\ABMC.pdb
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\bin\BussinessLayer.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\bin\Entities.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\bin\DataAccess.dll
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\bin\BussinessLayer.pdb
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\bin\Entities.pdb
+C:\Users\Mati_\Documents\Bitsion\Desafio_Tecnico\Desafio_Tecnico\ABMC\bin\DataAccess.pdb
