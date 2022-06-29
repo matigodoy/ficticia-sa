@@ -35,13 +35,31 @@ namespace ABMC.estatico.paginas
         {
             if (e.CommandName.Equals("Modificar"))
             {
-                
+                lblModalTitle.Text = "Modificar persona";
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "myModal", "abrirModal();", true);
+                upModal.Update();
+                hfIDSeleccionado.Value = e.CommandArgument.ToString();
+            }
+            if (e.CommandName.Equals("Eliminar"))
+            {
+                PersonaBL.EliminarPersona(int.Parse(e.CommandArgument.ToString()));
+                CargarGrillaPersonas();
             }
         }
 
         protected void grvPersonas_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
 
+        }
+
+        protected void pbAltaPersona_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnModificarPersona_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
