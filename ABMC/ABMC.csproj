@@ -106,11 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="estatico\paginas\Login.aspx" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="estatico\css\signin.css" />
     <Content Include="Web.config" />
-    <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
