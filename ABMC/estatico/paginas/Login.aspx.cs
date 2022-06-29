@@ -24,6 +24,8 @@ namespace ABMC.estatico.paginas
                 try
                 {
                     usuario = UsuarioBL.Login(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                    Session["usrLoggedIn"] = usuario;
+                    Response.Redirect("Personas");
                 }
                 catch (Exception ex)
                 {

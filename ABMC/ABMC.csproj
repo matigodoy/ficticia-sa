@@ -105,8 +105,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estatico\css\heroes.css" />
     <Content Include="estatico\img\logoipsum-logo-50.svg" />
     <Content Include="estatico\paginas\Login.aspx" />
+    <Content Include="estatico\paginas\Personas.aspx" />
     <Content Include="Global.asax" />
     <Content Include="estatico\css\signin.css" />
     <Content Include="Web.config" />
@@ -120,6 +122,20 @@
     <Compile Include="estatico\paginas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="estatico\paginas\Personas.aspx.cs">
+      <DependentUpon>Personas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estatico\paginas\Personas.aspx.designer.cs">
+      <DependentUpon>Personas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estatico\paginas\signedin.Master.cs">
+      <DependentUpon>signedin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estatico\paginas\signedin.Master.designer.cs">
+      <DependentUpon>signedin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -129,6 +145,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estatico\paginas\signedin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

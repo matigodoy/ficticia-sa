@@ -134,6 +134,7 @@ BEGIN
         Enfermedad = @Enfermedad
     WHERE Id = @Id
 END
+exec usp_ListarPersonas
 
 CREATE PROCEDURE [dbo].[usp_EliminarPersona]
     @Id INT

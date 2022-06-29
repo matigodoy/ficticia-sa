@@ -8,7 +8,7 @@ using Entities;
 
 namespace BusinessLayer
 {
-    public class PersonaCN
+    public class PersonaBL
     {
         public static List<Persona> ListarPersonas()
         {
