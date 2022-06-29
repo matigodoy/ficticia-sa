@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Entities;
+using BusinessLayer;
 
 namespace ABMC.estatico.paginas
 {
@@ -12,6 +14,30 @@ namespace ABMC.estatico.paginas
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (validarCampos())
+            {
+
+            }
+        }
+
+        private bool validarCampos()
+        {
+            bool respuesta = false;
+
+            if (!String.IsNullOrEmpty(txtUsername.Text))
+            {
+                respuesta = true;
+            }
+            if (!String.IsNullOrEmpty(txtPassword.Text))
+            {
+                respuesta = true;
+            }
+
+            return respuesta;
         }
     }
 }

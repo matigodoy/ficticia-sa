@@ -11,7 +11,7 @@ namespace DataAccess
     {
         public static SqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection("Data Source=DESKTOP-QQQQQQQ\\SQLEXPRESS;Initial Catalog=Seguros;Integrated Security=True");
+            SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=Ficticia;Integrated Security=True");
             return cn;
         }
     }

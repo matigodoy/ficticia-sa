@@ -87,7 +87,7 @@
                     Recordarme
                 </label>
             </div>
-            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="w-100 btn btn-lg btn-primary" />
+            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="w-100 btn btn-lg btn-primary" OnClick="btnIngresar_Click" />
             <%--<button class="" type="submit"></button>--%>
             <p class="mt-5 mb-3 text-muted">&copy; Godoy Matias 2022</p>
         </form>

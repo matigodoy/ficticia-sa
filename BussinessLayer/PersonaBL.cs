@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DataAccess;
 using Entities;
 
-namespace CapaNegocio
+namespace BusinessLayer
 {
     public class PersonaCN
     {
