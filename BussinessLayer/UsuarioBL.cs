@@ -34,5 +34,10 @@ namespace BusinessLayer
         {
             return UsuarioDA.ObtenerUsuarios();
         }
+
+        public static Usuario Login(string user, string password)
+        {
+            return UsuarioDA.Login(user, password);
+        }
     }
 }

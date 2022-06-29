@@ -82,6 +82,17 @@ BEGIN
     SELECT * FROM Persona WHERE Id = @Id
 END
 
+CREATE PROCEDURE [dbo].[usp_Login]
+    @user NVARCHAR(100),
+	@password NVARCHAR(100)
+AS
+BEGIN
+    SELECT [Id], [Nombre], [Contrasena], [PersonaId]
+    FROM [dbo].[Usuario]
+    WHERE [Nombre] = @user
+	AND	[Contrasena] = @password
+END
+
 CREATE PROCEDURE [dbo].[usp_CrearPersona]
     @Nombre NVARCHAR(100),
     @Identificacion NVARCHAR(100),

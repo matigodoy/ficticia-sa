@@ -20,7 +20,15 @@ namespace ABMC.estatico.paginas
         {
             if (validarCampos())
             {
-
+                Usuario usuario = null;
+                try
+                {
+                    usuario = UsuarioBL.Login(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }     
             }
         }
 

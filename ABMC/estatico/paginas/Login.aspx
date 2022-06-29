@@ -73,7 +73,7 @@
             <h1 class="h3 mb-3 fw-normal">Ingresá a tu cuenta</h1>
 
             <div class="form-floating">
-                <asp:TextBox ID="txtUsername" runat="server" TextMode="Password" CssClass="form-control" placeholder="nombre@ejemplo.com"></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" TextMode="SingleLine" CssClass="form-control" placeholder="nombre@ejemplo.com"></asp:TextBox>
                 <label for="<%= txtUsername.ClientID %>">Usuario</label>
             </div>
             <div class="form-floating">
