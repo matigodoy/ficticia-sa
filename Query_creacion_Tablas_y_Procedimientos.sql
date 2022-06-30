@@ -143,11 +143,12 @@ BEGIN
     DELETE FROM Persona WHERE Id = @Id
 END
 
-EXEC usp_CrearPersona 'Juan', '123456789', 20, 'Masculino', 'Soltero', 'Si', 'No', 'No', 'No'
-EXEC usp_CrearPersona 'Maria', '987654321', 18, 'Femenino', 'Soltera', 'No', 'Si', 'No', 'No'
-EXEC usp_CrearPersona 'Pedro', '123456789', 20, 'Masculino', 'Soltero', 'Si', 'No', 'No', 'No'
-EXEC usp_CrearPersona 'Juana', '987654321', 18, 'Femenino', 'Soltera', 'No', 'Si', 'No', 'No'
-EXEC usp_CrearPersona 'Pablo', '123456789', 20, 'Masculino', 'Soltero', 'Si', 'No', 'No', 'No'
-EXEC usp_CrearPersona 'Ana', '987654321', 18, 'Femenino', 'Soltera', 'No', 'Si', 'No', 'No'
+EXEC usp_CrearPersona 'Juan', '123456789', 20, 'Masculino', 'Activo', 'Si', 'No', 'No', 'No'
+EXEC usp_CrearPersona 'Maria', '987654321', 18, 'Femenino', 'Activo', 'No', 'Si', 'No', 'No'
+EXEC usp_CrearPersona 'Pedro', '123456789', 20, 'Masculino', 'Activo', 'Si', 'No', 'No', 'No'
+EXEC usp_CrearPersona 'Juana', '987654321', 18, 'Femenino', 'Activo', 'No', 'Si', 'No', 'No'
+EXEC usp_CrearPersona 'Pablo', '123456789', 20, 'Masculino', 'Activo', 'Si', 'No', 'No', 'No'
+EXEC usp_CrearPersona 'Ana', '987654321', 18, 'Femenino', 'Activo', 'No', 'Si', 'No', 'No'
 
-EXEC InsertarUsuario 'juanelcrack','123','1'
+EXEC InsertarUsuario 'juan','123','1'
+EXEC InsertarUsuario 'admin','321','3'
