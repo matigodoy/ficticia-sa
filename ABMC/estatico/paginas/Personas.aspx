@@ -7,7 +7,7 @@
     <meta name="author" content="Godoy Matias" />
     <link href="../img/logoipsum-logo-50.svg" rel="icon" type="image/x-icon" />
     <title>Ficticia - Personas</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.css" rel="stylesheet" />
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -94,52 +94,52 @@
                                     <asp:TextBox type="text" ID="leIdentificacion" runat="server" CssClass="form-control" autocomplete="nope" AutoCompleteType="Disabled"></asp:TextBox>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label">Edad</label>
-                                    <asp:TextBox type="tel" ID="leEdad" runat="server" CssClass="form-control"  autocomplete="nope" TextMode="Number"></asp:TextBox>
+                                    <label class="form-label">Edad (*)</label>
+                                    <asp:TextBox type="tel" ID="leEdad" runat="server" CssClass="form-control" autocomplete="nope" TextMode="Number"></asp:TextBox>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label" >Genero</label>
-                                    <asp:DropDownList ID="ddlGenero" name="Genero" runat="server" CssClass="form-control" >
-                                        <asp:ListItem Enabled="true" Text="Seleccione un género" Value= “-1”></asp:ListItem>
+                                    <label class="form-label">Genero (*)</label>
+                                    <asp:DropDownList ID="ddlGenero" name="Genero" runat="server" CssClass="form-control">
+                                        <asp:ListItem Enabled="true" Text="Seleccione un género" Value="“-1”"></asp:ListItem>
                                         <asp:ListItem Text="Femenino" Value="1"></asp:ListItem>
                                         <asp:ListItem Text="Masculino" Value="2"></asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label" >Estado</label>
-                                    <asp:DropDownList ID="ddlEstado" name="Genero" runat="server" CssClass="form-control" >
-                                        <asp:ListItem Enabled="true" Text="Seleccione un estado" Value= “-1”></asp:ListItem>
+                                    <label class="form-label">Estado (*)</label>
+                                    <asp:DropDownList ID="ddlEstado" name="Genero" runat="server" CssClass="form-control">
+                                        <asp:ListItem Enabled="true" Text="Seleccione un estado" Value="“-1”"></asp:ListItem>
                                         <asp:ListItem Text="Activo" Value="1"></asp:ListItem>
                                         <asp:ListItem Text="Inactivo" Value="2"></asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label" >¿Maneja?</label>
-                                    <asp:DropDownList ID="ddlManeja" name="Genero" runat="server" CssClass="form-control" >
-                                        <asp:ListItem Enabled="true" Text="Seleccione una opción" Value= “-1”></asp:ListItem>
+                                    <label class="form-label">¿Maneja?</label>
+                                    <asp:DropDownList ID="ddlManeja" name="Genero" runat="server" CssClass="form-control">
+                                        <asp:ListItem Enabled="true" Text="Seleccione una opción" Value="“-1”"></asp:ListItem>
                                         <asp:ListItem Text="Si" Value="1"></asp:ListItem>
                                         <asp:ListItem Text="No" Value="2"></asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label" >¿Usa lentes?</label>
-                                    <asp:DropDownList ID="ddlLentes" name="Genero" runat="server" CssClass="form-control" >
-                                        <asp:ListItem Enabled="true" Text="Seleccione una opción" Value= “-1”></asp:ListItem>
+                                    <label class="form-label">¿Usa lentes?</label>
+                                    <asp:DropDownList ID="ddlLentes" name="Genero" runat="server" CssClass="form-control">
+                                        <asp:ListItem Enabled="true" Text="Seleccione una opción" Value="“-1”"></asp:ListItem>
                                         <asp:ListItem Text="Si" Value="1"></asp:ListItem>
                                         <asp:ListItem Text="No" Value="2"></asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-md-12">
-                                    <label class="form-label" >¿Es diabético/a?</label>
-                                    <asp:DropDownList ID="ddlDiabetico" name="Genero" runat="server" CssClass="form-control" >
-                                        <asp:ListItem Enabled="true" Text="Seleccione una opción" Value= “-1”></asp:ListItem>
+                                    <label class="form-label">¿Es diabético/a?</label>
+                                    <asp:DropDownList ID="ddlDiabetico" name="Genero" runat="server" CssClass="form-control">
+                                        <asp:ListItem Enabled="true" Text="Seleccione una opción" Value="“-1”"></asp:ListItem>
                                         <asp:ListItem Text="Si" Value="1"></asp:ListItem>
                                         <asp:ListItem Text="No" Value="2"></asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="col-md-12">
                                     <label class="form-label">¿Padece alguna otra enfermedad? ¿Cuál?</label>
-                                    <asp:TextBox  ID="txtEnfermedad" runat="server" CssClass="form-control"  autocomplete="nope"></asp:TextBox>
+                                    <asp:TextBox ID="txtEnfermedad" runat="server" CssClass="form-control" autocomplete="nope"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -156,28 +156,35 @@
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <div class="px-4 text-center border-bottom">
                     <h1 class="display-4 fw-bold">Personas</h1>
-                    <div class="col-lg-6 mx-auto">
+                    <div class="col-lg-8 mx-auto">
                         <p class="lead mb-4">Se muestra un listado en el que podrá consultar, agregar, editar y eliminar personas a su gusto.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <asp:LinkButton ID="btnModalPersona" runat="server" CssClass="btn btn-outline-primary" ToolTip="Registrar nueva persona" OnClick="btnModalPersona_Click"
+                                Text="Agregar persona"><i class="fa fa-plus-circle "></i>  Agregar persona</asp:LinkButton>
+                        </div>
+                        <br /><br />
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                            <asp:GridView ID="grvPersonas" runat="server" AllowPaging="true" AutoGenerateColumns="false" AllowSorting="false" OnRowCommand="grvPersonas_RowCommand" OnPageIndexChanging="grvPersonas_PageIndexChanging"
-                                OnRowDataBound="grvPersonas_RowDataBound" CssClass="table table-striped table-bordered table-hover" PageSize="10" EditRowStyle-Height="5">
-                                <Columns>
-                                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:BoundField DataField="Identificacion" HeaderText="Identificacion" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:BoundField DataField="Edad" HeaderText="Genero" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:BoundField DataField="Estado" HeaderText="Estado" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:BoundField DataField="Maneja" HeaderText="Maneja" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:BoundField DataField="UsaLentes" HeaderText="UsaLentes" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:BoundField DataField="Diabetico" HeaderText="Diabetico" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:BoundField DataField="Enfermedad" HeaderText="Enfermedad" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
-                                    <asp:TemplateField HeaderText="Accion" ItemStyle-CssClass="item-col-style d-flex" HeaderStyle-CssClass="header-col-style info " ItemStyle-VerticalAlign="Middle">
-                                        <ItemTemplate>
-                                            <asp:LinkButton ID="btnModificar" runat="server" CssClass="btn btn-outline-primary" CausesValidation="false" ToolTip="Modificar" CommandArgument='<%# Eval("Id")%>' CommandName="Modificar"><i class="fa fa-pencil-square-o"></i></asp:LinkButton>
-                                            <asp:LinkButton ID="btnEliminar" runat="server" CssClass="btn btn-outline-danger" CausesValidation="false" ToolTip="Eliminar" OnClientClick="return DeleteConfirm(this);" CommandArgument='<%# Eval("Id")%>' CommandName="Eliminar"><i class="fa fa-trash"></i></asp:LinkButton>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                </Columns>
-                            </asp:GridView>
+                            <div class="table-responsive">
+                                <asp:GridView ID="grvPersonas" runat="server" AllowPaging="true" AutoGenerateColumns="false" AllowSorting="false" OnRowCommand="grvPersonas_RowCommand" OnPageIndexChanging="grvPersonas_PageIndexChanging"
+                                    OnRowDataBound="grvPersonas_RowDataBound" CssClass="table table-striped table-bordered table-hover" PageSize="10" EditRowStyle-Height="5">
+                                    <Columns>
+                                        <asp:BoundField DataField="Nombre" HeaderText="Nombre" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:BoundField DataField="Identificacion" HeaderText="Identificacion" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:BoundField DataField="Edad" HeaderText="Genero" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:BoundField DataField="Estado" HeaderText="Estado" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:BoundField DataField="Maneja" HeaderText="Maneja" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:BoundField DataField="UsaLentes" HeaderText="UsaLentes" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:BoundField DataField="Diabetico" HeaderText="Diabetico" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:BoundField DataField="Enfermedad" HeaderText="Enfermedad" ItemStyle-HorizontalAlign="Center" HeaderStyle-CssClass="item-col-style info" />
+                                        <asp:TemplateField HeaderText="Accion" ItemStyle-CssClass="item-col-style d-flex" HeaderStyle-CssClass="header-col-style info " ItemStyle-VerticalAlign="Middle">
+                                            <ItemTemplate>                                                
+                                                <asp:LinkButton ID="btnModificar" runat="server" CssClass="btn btn-outline-primary" CausesValidation="false" ToolTip="Modificar" CommandArgument='<%# Eval("Id")%>' CommandName="Modificar"><i class="fa fa-pencil-square-o"></i></asp:LinkButton>
+                                                <asp:LinkButton ID="btnEliminar" runat="server" CssClass="btn btn-outline-danger" CausesValidation="false" ToolTip="Eliminar" OnClientClick="return DeleteConfirm(this);" CommandArgument='<%# Eval("Id")%>' CommandName="Eliminar"><i class="fa fa-trash"></i></asp:LinkButton>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,12 +193,25 @@
 
 
         </div>
-
+        <%--sweetalert--%>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.js"></script>
         <script>
+
+            function asdsadas() {
+                Swal.fire(
+                    'Good job!',
+                    'You clicked the button!',
+                    'success'
+                );
+            }
+
             function abrirModal() {
                 var myModal = new bootstrap.Modal(document.getElementById('myModal'), { keyboard: false });
                 myModal.show();
             }
+
+
 
             var obj = { status: false, ele: null };
             function DeleteConfirm(btnDelete) {

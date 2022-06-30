@@ -111,9 +111,17 @@
     <Content Include="estatico\paginas\Personas.aspx" />
     <Content Include="Global.asax" />
     <Content Include="estatico\css\signin.css" />
+    <Content Include="SweetAlert2\enhancers.js" />
+    <Content Include="SweetAlert2\globalState.js" />
+    <Content Include="SweetAlert2\instanceMethods.js" />
+    <Content Include="SweetAlert2\privateProps.js" />
+    <Content Include="SweetAlert2\staticMethods.js" />
+    <Content Include="SweetAlert2\SweetAlert.js" />
+    <Content Include="SweetAlert2\sweetalert2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Data\MessageBox.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="estatico\paginas\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -141,12 +149,15 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="estatico\paginas\signedin.Master" />
     <None Include="packages.config" />
+    <Content Include="SweetAlert2\variables.scss" />
+    <Content Include="SweetAlert2\toasts.scss" />
+    <Content Include="SweetAlert2\sweetalert2.scss" />
+    <Content Include="SweetAlert2\mixins.scss" />
+    <Content Include="SweetAlert2\animations.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

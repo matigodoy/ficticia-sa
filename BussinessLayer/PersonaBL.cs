@@ -12,27 +12,64 @@ namespace BusinessLayer
     {
         public static List<Persona> ListarPersonas()
         {
-            return PersonaDA.ListarPersonas();
+            try
+            {
+                return PersonaDA.ListarPersonas();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
 
         public static Persona ObtenerPersona(int id)
-        {
-            return PersonaDA.ObtenerPersona(id);
+        {            
+            try
+            {
+                return PersonaDA.ObtenerPersona(id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
 
         public static void CrearPersona(Persona persona)
         {
-            PersonaDA.CrearPersona(persona);
+            try
+            {
+                PersonaDA.CrearPersona(persona);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }            
         }
 
         public static void EditarPersona(Persona persona)
-        {
-            PersonaDA.EditarPersona(persona);
+        {            
+            try
+            {
+                PersonaDA.EditarPersona(persona);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public static void EliminarPersona(int id)
-        {
-            PersonaDA.EliminarPersona(id);
+        {            
+            try
+            {
+                PersonaDA.EliminarPersona(id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

@@ -13,24 +13,34 @@ namespace ABMC.estatico.paginas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                loginFeedBack.Style.Value = "display:none;";
+            }
+            else
+            {
+                
+            }
+            
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
             if (validarCampos())
             {
-                Usuario usuario = null;
-                try
+                Usuario usuario = null;                
+                usuario = UsuarioBL.Login(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+
+                if(usuario != null)
                 {
-                    usuario = UsuarioBL.Login(txtUsername.Text.Trim(), txtPassword.Text.Trim());
                     Session["usrLoggedIn"] = usuario;
                     Response.Redirect("Personas");
                 }
-                catch (Exception ex)
+                else
                 {
-                    Console.WriteLine(ex.Message);
-                }     
+                    loginFeedBack.Style.Value = "display:block;";
+                }
+                
             }
         }
 

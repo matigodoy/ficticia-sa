@@ -77,9 +77,15 @@
                 <label for="<%= txtUsername.ClientID %>">Usuario</label>
             </div>
             <div class="form-floating">
-                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Password"></asp:TextBox>
-                <label for="<%= txtPassword.ClientID %>">Contraseña</label>
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Password" ></asp:TextBox>
+                <label for="<%= txtPassword.ClientID %>">Contraseña</label>                
             </div>
+            <div class="form-floating">
+                <div runat="server" id="loginFeedBack" class="alert alert-warning" role="alert" >
+                  Usuario y/o contraseña incorrecto/s.
+                </div>
+            </div>
+            
 
             <div class="checkbox mb-3">
                 <label>

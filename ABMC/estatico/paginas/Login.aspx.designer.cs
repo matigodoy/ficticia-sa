@@ -42,6 +42,15 @@ namespace ABMC.estatico.paginas
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
+        /// Control loginFeedBack.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl loginFeedBack;
+
+        /// <summary>
         /// Control btnIngresar.
         /// </summary>
         /// <remarks>
